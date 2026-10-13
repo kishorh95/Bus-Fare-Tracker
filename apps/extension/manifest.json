@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "BusFare Tracker — Manual Capture",
+  "version": "0.1.0",
+  "description": "Manually save a bus fare you observed and keep a local history.",
+  "action": {
+    "default_title": "BusFare Tracker",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"]
+}

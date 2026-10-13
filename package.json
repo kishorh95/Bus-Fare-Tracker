@@ -1,0 +1,19 @@
+{
+  "name": "busfare-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/extension",
+    "packages/core"
+  ],
+  "scripts": {
+    "dev": "npm run build -w @busfare/core && npm run dev -w @busfare/web",
+    "build": "npm run build -w @busfare/core && npm run build -w @busfare/web",
+    "test": "npm run test -w @busfare/core",
+    "build:extension": "npm run build -w @busfare/extension"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
